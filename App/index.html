@@ -22,22 +22,19 @@
 			}
 			
 			.primaryTitle {
+				padding-left: 10px;
 				background-color: #388E3C;
 				color: #FFFFFF;
 				line-height: 3;
 			}
 			
 			#leftBB {
-				line-height: 5;
 				width: 50%;
 				background-color: #283593;
-				color: wheat;
 				float: left;
 			}
 			
 			#rightBB {
-				line-height: 5;
-				color: wheat;
 				text-align: right;
 				width: 50%;
 				background-color: #4527A0;
@@ -46,7 +43,20 @@
 			
 			#bottomBar {
 				position: relative;
+				line-height: 4;
+				color: wheat;
 				height: auto;
+			}
+			
+			#icon_login {
+				display: inline-block;
+				left: 50%;
+				margin-top: -72px;
+				position: relative;
+				border-radius: 50%;
+				background-color: black;
+				height: 96px;
+				width: 96px;
 			}
 		</style>
 	</head>
@@ -54,10 +64,17 @@
 	<body>
 		<div id="header">
 			图片位
+
 		</div>
+
 		<div id="contentBand">
+
 			<div class="primaryTitle" id="bandTitle">
+
 				推荐品牌
+				<div id="icon_login">
+
+				</div>
 			</div>
 			<div id="bandContent">
 				<ul class="mui-table-view mui-grid-view mui-grid-9">
