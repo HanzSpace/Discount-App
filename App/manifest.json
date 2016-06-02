@@ -1,7 +1,7 @@
 {
 	"@platforms": ["android", "iPhone", "iPad"],
-	"id": "H56343B15",/*应用的标识，创建应用时自动生成，勿手动修改*/
-	"name": "App",/*应用名称，程序桌面图标名称*/
+	"id": "H5EF36BDF",/*应用的标识，创建应用时自动生成，勿手动修改*/
+	"name": "llllll",/*应用名称，程序桌面图标名称*/
 	"version": {
 		"name": "1.0.0",/*应用版本名称*/
 		"code": "83"
@@ -188,6 +188,27 @@
 					"xxhdpi": ""
 				}
 			}
+		}
+	},
+	"dependencies": {
+		"pages": {
+			"index.html": {
+				"resources": [
+					"js/mui.min.js",
+					"css/mui.min.css",
+					"fonts/mui.ttf",
+					"js/mainActivity.js",
+					"js/jquery-2.2.3.js"
+				],
+				"refer": [],
+				"priority": 0
+			}
+		},
+		"idle": {
+			"resources": [
+				"js/mui.js",
+				"css/mui.css"
+			]
 		}
 	}
 }
