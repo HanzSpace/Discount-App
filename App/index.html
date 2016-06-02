@@ -1,16 +1,164 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-    <title></title>
-    <script src="js/mui.min.js"></script>
-    <link href="css/mui.min.css" rel="stylesheet"/>
-    <script type="text/javascript" charset="utf-8">
-      	mui.init();
-    </script>
-</head>
-<body>
-	
-</body>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<script src="js/mui.min.js"></script>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<script src="js/jquery-2.2.3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/mainActivity.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" charset="utf-8">
+			mui.init();
+		</script>
+		<style type="text/css">
+			#header {
+				background-color: #2E7D32;
+			}
+			
+			#content {
+				height: auto;
+			}
+			
+			.primaryTitle {
+				background-color: #388E3C;
+				color: #FFFFFF;
+				line-height: 3;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="header">
+			图片位
+		</div>
+		<div id="contentBand">
+			<div class="primaryTitle" id="bandTitle">
+				推荐品牌
+			</div>
+			<div id="bandContent">
+				<ul class="mui-table-view mui-grid-view mui-grid-9">
+					<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+						<a href="#">
+							<span class="mui-icon mui-icon-home"></span>
+							<div class="mui-media-body">Home</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+						<a href="#">
+							<span class="mui-icon mui-icon-email"><span class="mui-badge">5</span></span>
+							<div class="mui-media-body">Email</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+						<a href="#">
+							<span class="mui-icon mui-icon-chatbubble"></span>
+							<div class="mui-media-body">Chat</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+						<a href="#">
+							<span class="mui-icon mui-icon-location"></span>
+							<div class="mui-media-body">location</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+						<a href="#">
+							<span class="mui-icon mui-icon-search"></span>
+							<div class="mui-media-body">Search</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+						<a href="#">
+							<span class="mui-icon mui-icon-phone"></span>
+							<div class="mui-media-body">Phone</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+						<a href="#">
+							<span class="mui-icon mui-icon-gear"></span>
+							<div class="mui-media-body">Setting</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+						<a href="#">
+							<span class="mui-icon mui-icon-info"></span>
+							<div class="mui-media-body">about</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+						<a href="#">
+							<span class="mui-icon mui-icon-more"></span>
+							<div class="mui-media-body">more</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="contentPlace">
+			<div class="primaryTitle" id="placeTitle">
+				推荐商场
+			</div>
+			<div id="placeContent">
+				<ul class="mui-table-view mui-grid-view mui-grid-9">
+					<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+						<a href="#">
+							<span class="mui-icon mui-icon-home"></span>
+							<div class="mui-media-body">Home</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+						<a href="#">
+							<span class="mui-icon mui-icon-email"><span class="mui-badge">5</span></span>
+							<div class="mui-media-body">Email</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+						<a href="#">
+							<span class="mui-icon mui-icon-chatbubble"></span>
+							<div class="mui-media-body">Chat</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+						<a href="#">
+							<span class="mui-icon mui-icon-location"></span>
+							<div class="mui-media-body">location</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+						<a href="#">
+							<span class="mui-icon mui-icon-search"></span>
+							<div class="mui-media-body">Search</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+						<a href="#">
+							<span class="mui-icon mui-icon-phone"></span>
+							<div class="mui-media-body">Phone</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+						<a href="#">
+							<span class="mui-icon mui-icon-gear"></span>
+							<div class="mui-media-body">Setting</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+						<a href="#">
+							<span class="mui-icon mui-icon-info"></span>
+							<div class="mui-media-body">about</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+						<a href="#">
+							<span class="mui-icon mui-icon-more"></span>
+							<div class="mui-media-body">more</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+
 </html>
