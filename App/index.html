@@ -34,10 +34,18 @@
 					}
 					//更换标题
 					title.innerHTML = this.querySelector('.mui-tab-label').innerHTML;
-					//显示目标选项卡
-					plus.webview.show(targetTab);
-					//隐藏当前;
-					plus.webview.hide(activeTab);
+					if(subpages.indexOf(targetTab)>subpages.indexOf(activeTab)){
+						//显示目标选项卡
+						plus.webview.show(targetTab,"slide-in-right",100);
+						//隐藏当前;
+						plus.webview.hide(activeTab,"slide-out-left",100);
+					}else{
+						//显示目标选项卡
+						plus.webview.show(targetTab,"slide-in-left",100);
+						//隐藏当前;
+						plus.webview.hide(activeTab,"slide-out-right",100);
+					}
+					
 					//更改当前活跃的选项卡
 					activeTab = targetTab;
 				});
