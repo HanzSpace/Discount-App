@@ -9,6 +9,7 @@
 		<link href="css/mui.min.css" rel="stylesheet" />
 		<script src="js/jquery-2.2.3.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/mainActivity.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/mainMui.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript" charset="utf-8">
 			mui.init();
 		</script>
@@ -42,8 +43,9 @@
 			}
 			
 			#bottomBar {
-				position: relative;
-				line-height: 4;
+				position: absolute;
+				bottom: 0;
+				width: 100%;
 				color: wheat;
 				height: auto;
 			}
@@ -67,7 +69,7 @@
 
 		</div>
 
-		<div id="contentBand">
+		<div id="contentBrand">
 
 			<div class="primaryTitle" id="bandTitle">
 
@@ -199,13 +201,13 @@
 			</div>
 		</div>
 		<div id="bottomBar">
-			<div id="leftBB">
+			<div id="leftBB" onclick="openWebView()">
 				<a id="lBB_icon"><span class="mui-icon mui-icon-back">
 				</span></a>
 				<label for="lBB_icon">进入商场页面</label>
 			</div>
 			<div id="rightBB">
-				<label for="lBB_icon">进入商场页面</label>
+				<label for="lBB_icon">进入品牌页面</label>
 				<a id="rBB_icon"><span class="mui-icon mui-icon-forward">
 				</span></a>
 			</div>
