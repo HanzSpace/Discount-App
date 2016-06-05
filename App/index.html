@@ -7,54 +7,12 @@
 		<title></title>
 		<script src="js/mui.min.js"></script>
 		<link href="css/mui.min.css" rel="stylesheet" />
-		<script type="text/javascript" charset="utf-8">
-			mui.init();
-			var subpages = ["pagefolder/recommended.html", "pagefolder/home.html", "pagefolder/search.html", "pagefolder/user.html"];
-			var subpage_style = {
-				top: '45px',
-				bottom: '51px'
-			};
-			mui.plusReady(function() {
-				for (var i = 0; i < 4; i++) {
-					var pages = plus.webview.create(subpages[i], subpages[i], subpage_style);
-					if (i > 0) {
-						pages.hide();
-					} else {
-						pages.show();
-					}
-				}
-			});
-			var activeTab = subpages[0];
-			mui.ready(function() {
-				mui('.mui-bar-tab').on('tap', 'a', function(e) {
-					var title = document.getElementById("title");
-					var targetTab = this.getAttribute('href');
-					if (targetTab == activeTab) {
-						return;
-					}
-					//更换标题
-					title.innerHTML = this.querySelector('.mui-tab-label').innerHTML;
-					if(subpages.indexOf(targetTab)>subpages.indexOf(activeTab)){
-						//显示目标选项卡
-						plus.webview.show(targetTab,"slide-in-right",100);
-						//隐藏当前;
-						plus.webview.hide(activeTab,"slide-out-left",100);
-					}else{
-						//显示目标选项卡
-						plus.webview.show(targetTab,"slide-in-left",100);
-						//隐藏当前;
-						plus.webview.hide(activeTab,"slide-out-right",100);
-					}
-					//更改当前活跃的选项卡
-					activeTab = targetTab;
-				});
-			});
-		</script>
+		<script src="custom_js/index.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 
 	<body>
 		<header class="mui-bar mui-bar-nav">
-			<h1 id="title" class="mui-title">推荐</h1>
+			<h1 id="title" class="mui-title"></h1>
 		</header>
 		<nav class="mui-bar mui-bar-tab">
 			<a id="defaultTab" class="mui-tab-item mui-active" href="pagefolder/recommended.html">
@@ -74,6 +32,27 @@
 				<span class="mui-tab-label">用户</span>
 			</a>
 		</nav>
+		<div class="mui-slider">
+		    <div class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+		        <a class="mui-control-item" href="#item1">选项卡1</a>
+		        <a class="mui-control-item" href="#item2">选项卡2</a>
+		    </div>
+		    <div id="sliderProgressBar" class="mui-slider-progress-bar mui-col-xs-4"></div>
+		    <div class="mui-slider-group">
+		        <div id="item1" class="mui-slider-item mui-control-content mui-active">
+		            <ul class="mui-table-view">
+		                <li class="mui-table-view-cell">第1个选项卡子项</li>
+		                <li class="mui-table-view-cell">第1个选项卡子项</li>
+		            </ul>
+		        </div>
+		        <div id="item2mobile" class="mui-slider-item mui-control-content">
+		            <ul class="mui-table-view">
+		                <li class="mui-table-view-cell">第2个选项卡子项</li>
+		                <li class="mui-table-view-cell">第2个选项卡子项</li>
+		            </ul>
+		        </div>
+		    </div>
+		</div>
 	</body>
 
 </html>
