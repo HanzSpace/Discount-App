@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<script src="../../js/mui.min.js"></script>
+		<link href="../../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../../custom_css/recommended.css" />
+		<script src="../../custom_js/mainPagesJs/recommended.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<div id="pullrefresh" class="mui-content mui-scroll-wrapper">
+			<div class="mui-scroll">
+		<div id="inputBar" class="mui-input-row mui-search">
+			<input type="search" class="mui-input-speech mui-input-clear" placeholder="请输入品牌/商场名">
+		</div>
+		<div id="newsBar" class="mui-slider">
+			<div class="mui-slider-group mui-slider-loop">
+				<!--用于支持循环播放-->
+				<div class="mui-slider-item mui-slider-item-du">
+					<!-- 具体内容 -->
+					<a href="#"><img src="../../images/demo4.png" /></a>
+				</div>
+				<!--第一个内容区容器-->
+				<div class="mui-slider-item">
+					<!-- 具体内容 -->
+					<a href="#"><img src="../../images/demo1.png" /></a>
+				</div>
+				<!--第二个内容区-->
+				<div class="mui-slider-item">
+					<!-- 具体内容 -->
+					<a href="#"><img src="../../images/demo2.png" /></a>
+				</div>
+				<!--第三个内容区-->
+				<div class="mui-slider-item">
+					<!-- 具体内容 -->
+					<a href="#"><img src="../../images/demo3.png" /></a>
+				</div>
+				<!--第四个内容区-->
+				<div class="mui-slider-item">
+					<!-- 具体内容 -->
+					<a href="#"><img src="../../images/demo4.png" /></a>
+				</div>
+				<!--第一个内容区容器-->
+				<div class="mui-slider-item">
+					<!-- 具体内容 -->
+					<a href="#"><img src="../../images/demo1.png" /></a>
+				</div>
+			</div>
+			<div class="mui-slider-indicator">
+				<div class="mui-indicator mui-active"></div>
+				<div class="mui-indicator"></div>
+				<div class="mui-indicator"></div>
+				<div class="mui-indicator"></div>
+			</div>
+		</div>
+
+		<header class="mui-bar">
+			<h1 id="test" class="mui-title">热门<span>商场</span></h1>
+			<div class="mui-switch mui-switch-blue">
+				<div class="mui-switch-handle"></div>
+			</div>
+		</header>
+
+		<div class="hotBar">
+			<div class="mui-slider">
+				<div class="mui-slider-group mui-slider-loop">
+					<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一个图文表格) -->
+					<div class="mui-slider-item mui-slider-item-duplicate">
+						<ul class="mui-table-view mui-grid-view">
+							<li class="mui-table-view-cell mui-media mui-col-xs-4">
+								<a href="#">
+									<div class="mui-media-body">商场10</div>
+									<img class="mui-media-object" src="../../images/demo1.png">
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4">
+								<a href="#">
+									<div class="mui-media-body">商场11</div>
+									<img class="mui-media-object" src="../../images/demo2.png">
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4">
+								<a href="#">
+									<div class="mui-media-body">商场12</div>
+									<img class="mui-media-object" src="../../images/demo3.png">
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="mui-slider-item">
+						<ul class="mui-table-view mui-grid-view">
+							<li class="mui-table-view-cell mui-media mui-col-xs-4">
+								<a href="#">
+									<div class="mui-media-body">商场1</div>
+									<img class="mui-media-object" src="../../images/demo1.png">
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4">
+								<a href="#">
+									<div class="mui-media-body">商场2</div>
+									<img class="mui-media-object" src="../../images/demo2.png">
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4">
+								<a href="#">
+									<div class="mui-media-body">商场3</div>
+									<img class="mui-media-object" src="../../images/demo3.png">
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="mui-slider-item">
+						<ul class="mui-table-view mui-grid-view">
+							<li class="mui-table-view-cell mui-media mui-col-xs-4">
+								<a href="#">
+									<div class="mui-media-body">商场4</div>
+									<img class="mui-media-object" src="../../images/demo1.png">
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4">
+								<a href="#">
+									<div class="mui-media-body">商场5</div>
+									<img class="mui-media-object" src="../../images/demo2.png">
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4">
+								<a href="#">
+									<div class="mui-media-body">商场6</div>
+									<img class="mui-media-object" src="../../images/demo3.png">
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="mui-slider-item">
+						<ul class="mui-table-view mui-grid-view">
+							<li class="mui-table-view-cell mui-media mui-col-xs-4">
+								<a href="#">
+									<div class="mui-media-body">商场7</div>
+									<img class="mui-media-object" src="../../images/demo1.png">
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4">
+								<a href="#">
+									<div class="mui-media-body">商场8</div>
+									<img class="mui-media-object" src="../../images/demo2.png">
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4">
+								<a href="#">
+									<div class="mui-media-body">商场9</div>
+									<img class="mui-media-object" src="../../images/demo3.png">
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="mui-slider-item">
+						<ul class="mui-table-view mui-grid-view">
+							<li class="mui-table-view-cell mui-media mui-col-xs-4">
+								<a href="#">
+									<div class="mui-media-body">商场10</div>
+									<img class="mui-media-object" src="../../images/demo1.png">
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4">
+								<a href="#">
+									<div class="mui-media-body">商场11</div>
+									<img class="mui-media-object" src="../../images/demo2.png">
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4">
+								<a href="#">
+									<div class="mui-media-body">商场12</div>
+									<img class="mui-media-object" src="../../images/demo3.png">
+								</a>
+							</li>
+						</ul>
+					</div>
+					<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一个图文表格) -->
+					<div class="mui-slider-item mui-slider-item-duplicate">
+						<ul class="mui-table-view mui-grid-view">
+							<li class="mui-table-view-cell mui-media mui-col-xs-4">
+								<a href="#">
+									<div class="mui-media-body">商场1</div>
+									<img class="mui-media-object" src="../../images/demo1.png">
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4">
+								<a href="#">
+									<div class="mui-media-body">商场2</div>
+									<img class="mui-media-object" src="../../images/demo2.png">
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4">
+								<a href="#">
+									<div class="mui-media-body">商场3</div>
+									<img class="mui-media-object" src="../../images/demo3.png">
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="mui-slider-indicator moveUp-indicator">
+					<div class="mui-indicator mui-active"></div>
+					<div class="mui-indicator"></div>
+					<div class="mui-indicator"></div>
+					<div class="mui-indicator"></div>
+				</div>
+			</div>
+			<div class="mui-slider">
+				<div class="mui-slider-group mui-slider-loop">
+					<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一个图文表格) -->
+					<div class="mui-slider-item mui-slider-item-duplicate">
+						<ul class="mui-table-view mui-grid-view">
+							<li class="mui-table-view-cell mui-media mui-col-xs-4">
+								<a href="#">
+									<div class="mui-media-body">品牌10</div>
+									<img class="mui-media-object" src="../../images/demo1.png">
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4">
+								<a href="#">
+									<div class="mui-media-body">品牌11</div>
+									<img class="mui-media-object" src="../../images/demo2.png">
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4">
+								<a href="#">
+									<div class="mui-media-body">品牌12</div>
+									<img class="mui-media-object" src="../../images/demo3.png">
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="mui-slider-item">
+						<ul class="mui-table-view mui-grid-view">
+							<li class="mui-table-view-cell mui-media mui-col-xs-4">
+								<a href="#">
+									<div class="mui-media-body">品牌1</div>
+									<img class="mui-media-object" src="../../images/demo1.png">
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4">
+								<a href="#">
+									<div class="mui-media-body">品牌2</div>
+									<img class="mui-media-object" src="../../images/demo2.png">
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4">
+								<a href="#">
+									<div class="mui-media-body">品牌3</div>
+									<img class="mui-media-object" src="../../images/demo3.png">
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="mui-slider-item">
+						<ul class="mui-table-view mui-grid-view">
+							<li class="mui-table-view-cell mui-media mui-col-xs-4">
+								<a href="#">
+									<div class="mui-media-body">品牌4</div>
+									<img class="mui-media-object" src="../../images/demo1.png">
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4">
+								<a href="#">
+									<div class="mui-media-body">品牌5</div>
+									<img class="mui-media-object" src="../../images/demo2.png">
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4">
+								<a href="#">
+									<div class="mui-media-body">品牌6</div>
+									<img class="mui-media-object" src="../../images/demo3.png">
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="mui-slider-item">
+						<ul class="mui-table-view mui-grid-view">
+							<li class="mui-table-view-cell mui-media mui-col-xs-4">
+								<a href="#">
+									<div class="mui-media-body">品牌7</div>
+									<img class="mui-media-object" src="../../images/demo1.png">
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4">
+								<a href="#">
+									<div class="mui-media-body">品牌8</div>
+									<img class="mui-media-object" src="../../images/demo2.png">
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4">
+								<a href="#">
+									<div class="mui-media-body">品牌9</div>
+									<img class="mui-media-object" src="../../images/demo3.png">
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="mui-slider-item">
+						<ul class="mui-table-view mui-grid-view">
+							<li class="mui-table-view-cell mui-media mui-col-xs-4">
+								<a href="#">
+									<div class="mui-media-body">品牌10</div>
+									<img class="mui-media-object" src="../../images/demo1.png">
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4">
+								<a href="#">
+									<div class="mui-media-body">品牌11</div>
+									<img class="mui-media-object" src="../../images/demo2.png">
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4">
+								<a href="#">
+									<div class="mui-media-body">品牌12</div>
+									<img class="mui-media-object" src="../../images/demo3.png">
+								</a>
+							</li>
+						</ul>
+					</div>
+					<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一个图文表格) -->
+					<div class="mui-slider-item mui-slider-item-duplicate">
+						<ul class="mui-table-view mui-grid-view">
+							<li class="mui-table-view-cell mui-media mui-col-xs-4">
+								<a href="#">
+									<div class="mui-media-body">品牌1</div>
+									<img class="mui-media-object" src="../../images/demo1.png">
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4">
+								<a href="#">
+									<div class="mui-media-body">品牌2</div>
+									<img class="mui-media-object" src="../../images/demo2.png">
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4">
+								<a href="#">
+									<div class="mui-media-body">品牌3</div>
+									<img class="mui-media-object" src="../../images/demo3.png">
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="mui-slider-indicator moveUp-indicator">
+					<div class="mui-indicator mui-active"></div>
+					<div class="mui-indicator"></div>
+					<div class="mui-indicator"></div>
+					<div class="mui-indicator"></div>
+				</div>
+			</div>
+		</div>
+
+		<header class="mui-bar">
+			<h1 class="mui-title">附近<span>商场</span></h1>
+			<div class="mui-switch mui-switch-blue">
+				<div class="mui-switch-handle"></div>
+			</div>
+		</header>
+
+		<div class="hotBar">
+			<div class="mui-slider">
+				<div class="mui-slider-group mui-slider-loop">
+					<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一个图文表格) -->
+					<div class="mui-slider-item mui-slider-item-duplicate">
+						<ul class="mui-table-view mui-grid-view">
+							<li class="mui-table-view-cell mui-media mui-col-xs-4">
+								<a href="#">
+									<div class="mui-media-body">商场10</div>
+									<img class="mui-media-object" src="../../images/demo1.png">
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4">
+								<a href="#">
+									<div class="mui-media-body">商场11</div>
+									<img class="mui-media-object" src="../../images/demo2.png">
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4">
+								<a href="#">
+									<div class="mui-media-body">商场12</div>
+									<img class="mui-media-object" src="../../images/demo3.png">
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="mui-slider-item">
+						<ul class="mui-table-view mui-grid-view">
+							<li class="mui-table-view-cell mui-media mui-col-xs-4">
+								<a href="#">
+									<div class="mui-media-body">商场1</div>
+									<img class="mui-media-object" src="../../images/demo1.png">
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4">
+								<a href="#">
+									<div class="mui-media-body">商场2</div>
+									<img class="mui-media-object" src="../../images/demo2.png">
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4">
+								<a href="#">
+									<div class="mui-media-body">商场3</div>
+									<img class="mui-media-object" src="../../images/demo3.png">
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="mui-slider-item">
+						<ul class="mui-table-view mui-grid-view">
+							<li class="mui-table-view-cell mui-media mui-col-xs-4">
+								<a href="#">
+									<div class="mui-media-body">商场4</div>
+									<img class="mui-media-object" src="../../images/demo1.png">
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4">
+								<a href="#">
+									<div class="mui-media-body">商场5</div>
+									<img class="mui-media-object" src="../../images/demo2.png">
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4">
+								<a href="#">
+									<div class="mui-media-body">商场6</div>
+									<img class="mui-media-object" src="../../images/demo3.png">
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="mui-slider-item">
+						<ul class="mui-table-view mui-grid-view">
+							<li class="mui-table-view-cell mui-media mui-col-xs-4">
+								<a href="#">
+									<div class="mui-media-body">商场7</div>
+									<img class="mui-media-object" src="../../images/demo1.png">
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4">
+								<a href="#">
+									<div class="mui-media-body">商场8</div>
+									<img class="mui-media-object" src="../../images/demo2.png">
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4">
+								<a href="#">
+									<div class="mui-media-body">商场9</div>
+									<img class="mui-media-object" src="../../images/demo3.png">
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="mui-slider-item">
+						<ul class="mui-table-view mui-grid-view">
+							<li class="mui-table-view-cell mui-media mui-col-xs-4">
+								<a href="#">
+									<div class="mui-media-body">商场10</div>
+									<img class="mui-media-object" src="../../images/demo1.png">
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4">
+								<a href="#">
+									<div class="mui-media-body">商场11</div>
+									<img class="mui-media-object" src="../../images/demo2.png">
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4">
+								<a href="#">
+									<div class="mui-media-body">商场12</div>
+									<img class="mui-media-object" src="../../images/demo3.png">
+								</a>
+							</li>
+						</ul>
+					</div>
+					<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一个图文表格) -->
+					<div class="mui-slider-item mui-slider-item-duplicate">
+						<ul class="mui-table-view mui-grid-view">
+							<li class="mui-table-view-cell mui-media mui-col-xs-4">
+								<a href="#">
+									<div class="mui-media-body">商场1</div>
+									<img class="mui-media-object" src="../../images/demo1.png">
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4">
+								<a href="#">
+									<div class="mui-media-body">商场2</div>
+									<img class="mui-media-object" src="../../images/demo2.png">
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4">
+								<a href="#">
+									<div class="mui-media-body">商场3</div>
+									<img class="mui-media-object" src="../../images/demo3.png">
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="mui-slider-indicator moveUp-indicator">
+					<div class="mui-indicator mui-active"></div>
+					<div class="mui-indicator"></div>
+					<div class="mui-indicator"></div>
+					<div class="mui-indicator"></div>
+				</div>
+			</div>
+			<div class="mui-slider">
+				<div class="mui-slider-group mui-slider-loop">
+					<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一个图文表格) -->
+					<div class="mui-slider-item mui-slider-item-duplicate">
+						<ul class="mui-table-view mui-grid-view">
+							<li class="mui-table-view-cell mui-media mui-col-xs-4">
+								<a href="#">
+									<div class="mui-media-body">品牌10</div>
+									<img class="mui-media-object" src="../../images/demo1.png">
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4">
+								<a href="#">
+									<div class="mui-media-body">品牌11</div>
+									<img class="mui-media-object" src="../../images/demo2.png">
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4">
+								<a href="#">
+									<div class="mui-media-body">品牌12</div>
+									<img class="mui-media-object" src="../../images/demo3.png">
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="mui-slider-item">
+						<ul class="mui-table-view mui-grid-view">
+							<li class="mui-table-view-cell mui-media mui-col-xs-4">
+								<a href="#">
+									<div class="mui-media-body">品牌1</div>
+									<img class="mui-media-object" src="../../images/demo1.png">
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4">
+								<a href="#">
+									<div class="mui-media-body">品牌2</div>
+									<img class="mui-media-object" src="../../images/demo2.png">
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4">
+								<a href="#">
+									<div class="mui-media-body">品牌3</div>
+									<img class="mui-media-object" src="../../images/demo3.png">
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="mui-slider-item">
+						<ul class="mui-table-view mui-grid-view">
+							<li class="mui-table-view-cell mui-media mui-col-xs-4">
+								<a href="#">
+									<div class="mui-media-body">品牌4</div>
+									<img class="mui-media-object" src="../../images/demo1.png">
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4">
+								<a href="#">
+									<div class="mui-media-body">品牌5</div>
+									<img class="mui-media-object" src="../../images/demo2.png">
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4">
+								<a href="#">
+									<div class="mui-media-body">品牌6</div>
+									<img class="mui-media-object" src="../../images/demo3.png">
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="mui-slider-item">
+						<ul class="mui-table-view mui-grid-view">
+							<li class="mui-table-view-cell mui-media mui-col-xs-4">
+								<a href="#">
+									<div class="mui-media-body">品牌7</div>
+									<img class="mui-media-object" src="../../images/demo1.png">
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4">
+								<a href="#">
+									<div class="mui-media-body">品牌8</div>
+									<img class="mui-media-object" src="../../images/demo2.png">
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4">
+								<a href="#">
+									<div class="mui-media-body">品牌9</div>
+									<img class="mui-media-object" src="../../images/demo3.png">
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="mui-slider-item">
+						<ul class="mui-table-view mui-grid-view">
+							<li class="mui-table-view-cell mui-media mui-col-xs-4">
+								<a href="#">
+									<div class="mui-media-body">品牌10</div>
+									<img class="mui-media-object" src="../../images/demo1.png">
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4">
+								<a href="#">
+									<div class="mui-media-body">品牌11</div>
+									<img class="mui-media-object" src="../../images/demo2.png">
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4">
+								<a href="#">
+									<div class="mui-media-body">品牌12</div>
+									<img class="mui-media-object" src="../../images/demo3.png">
+								</a>
+							</li>
+						</ul>
+					</div>
+					<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一个图文表格) -->
+					<div class="mui-slider-item mui-slider-item-duplicate">
+						<ul class="mui-table-view mui-grid-view">
+							<li class="mui-table-view-cell mui-media mui-col-xs-4">
+								<a href="#">
+									<div class="mui-media-body">品牌1</div>
+									<img class="mui-media-object" src="../../images/demo1.png">
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4">
+								<a href="#">
+									<div class="mui-media-body">品牌2</div>
+									<img class="mui-media-object" src="../../images/demo2.png">
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4">
+								<a href="#">
+									<div class="mui-media-body">品牌3</div>
+									<img class="mui-media-object" src="../../images/demo3.png">
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="mui-slider-indicator moveUp-indicator">
+					<div class="mui-indicator mui-active"></div>
+					<div class="mui-indicator"></div>
+					<div class="mui-indicator"></div>
+					<div class="mui-indicator"></div>
+				</div>
+			</div>
+		</div>
+</div>
+		</div>
+	</body>
+
+</html>

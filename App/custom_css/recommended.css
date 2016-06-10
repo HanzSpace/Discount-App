@@ -1,0 +1,94 @@
+/*#inputBar{
+	margin-top: 25px;
+	position: absolute;
+	z-index: 1;
+	left: 0;
+	right: 0;
+}
+
+
+
+#newsBar{
+	margin-top: -15px;
+	position: absolute;
+	z-index: 0;
+	box-shadow: 0 1px 6px #ccc;
+}
+.mui-bar{
+}*/
+
+#inputBar{
+	position: absolute;
+	z-index: 1;
+	width: 70%;
+	left: 50%;
+	margin-left: -35%;
+	margin-top: 25px;
+}
+#inputBar input{
+	background-color: rgba(255,255,255,0.5);
+	margin-bottom: 0;
+}
+#inputBar span{
+	color: aliceblue;
+}
+#newsBar{
+	z-index: 0;
+}
+.mui-slider-indicator .mui-indicator {
+	background: rgba(255,255,255,0.2);
+	box-shadow: none;
+}
+.mui-bar{
+	position: relative;
+	height: 25px;
+}
+.mui-bar h1{
+	line-height: 25px;
+	font-size: 15px;
+	font-weight: 450;
+}
+.mui-switch{
+	position: absolute;
+	right: 2px;
+	border-color: #4cd964;
+    background-color: #4cd964;
+    height: 25px;
+    width: 65px;
+}
+.mui-switch .mui-switch-handle{
+	height: 23px;
+	width: 23px;
+}
+.mui-switch:before{
+	color: #fff;
+	content: '商场';
+	line-height: 16px;
+	right: 8px;
+}
+.mui-switch.mui-active:before{
+	content: '品牌';
+	line-height: 16px;
+	left: 8px;
+}
+.hotBar .mui-slider{
+	position: absolute;
+}
+.mui-table-view.mui-grid-view .mui-table-view-cell {
+	padding-top: 7px;
+}
+.mui-table-view.mui-grid-view .mui-table-view-cell .mui-media-body{
+	margin-top: 0;
+	margin-bottom: 2px;
+	font-size: 12px;
+	font-weight: 350;
+}
+.moveUp-indicator{
+	bottom: -1px;
+}
+.moveUp-indicator .mui-indicator{
+	background: rgba(0,0,0,0.15);
+}
+.moveUp-indicator .mui-indicator.mui-active{
+	background: rgba(0,0,0,0.6);
+}
