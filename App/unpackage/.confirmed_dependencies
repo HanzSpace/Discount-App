@@ -1,1 +1,30 @@
-null
+{
+	"index.html": {
+		"resources": [
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"pageFolder/mainPages/recommended.html",
+			"custom_js/index.js"
+		],
+		"refer": [
+			"pageFolder/mainPages/home.html",
+			"pageFolder/mainPages/user.html",
+			"pageFolder/mainPages/search.html",
+			"pageFolder/mainPages/recommended.html"
+		]
+	},
+	"pageFolder/mainPages/recommended.html": {
+		"resources": [
+			"images/demo2.png",
+			"images/demo1.png",
+			"images/demo3.png",
+			"custom_css/recommended.css",
+			"custom_js/mainPagesJs/recommended.js",
+			"images/demo4.png",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css"
+		]
+	}
+}

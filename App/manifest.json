@@ -191,28 +191,47 @@
 		}
 	},
 	"dependencies": {
-	  "pages": {
-	    "index.html": {
-	      "resources": [
-	        "js/mui.min.js",
-	        "css/mui.min.css",
-	        "fonts/mui.ttf",
-	        "custom_js/index.js"
-	      ],
-	      "refer": [
-	        "pagefolder/home.html",
-	        "pagefolder/recommended.html",
-	        "pagefolder/search.html",
-	        "pagefolder/user.html"
-	      ],
-	      "priority": 0
-	    }
-	  },
-	  "idle": {
-	    "resources": [
-	      "js/mui.js",
-	      "css/mui.css"
-	    ]
-	  }
+		"pages": {
+			"index.html": {
+				"resources": [
+					"js/mui.min.js",
+					"css/mui.min.css",
+					"fonts/mui.ttf",
+					"custom_js/index.js",
+					"pageFolder/mainPages/recommended.html"
+				],
+				"refer": [
+					"pagefolder/home.html",
+					"pagefolder/recommended.html",
+					"pagefolder/search.html",
+					"pagefolder/user.html",
+					"pageFolder/mainPages/home.html",
+					"pageFolder/mainPages/user.html",
+					"pageFolder/mainPages/search.html"
+				],
+				"priority": 0
+			},
+			"pageFolder/mainPages/recommended.html": {
+				"resources": [
+					"images/demo2.png",
+					"images/demo1.png",
+					"images/demo3.png",
+					"custom_css/recommended.css",
+					"custom_js/mainPagesJs/recommended.js",
+					"images/demo4.png",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css"
+				],
+				"refer": [],
+				"priority": 0
+			}
+		},
+		"idle": {
+			"resources": [
+				"js/mui.js",
+				"css/mui.css"
+			]
+		}
 	}
 }
