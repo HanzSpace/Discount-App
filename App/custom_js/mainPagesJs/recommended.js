@@ -11,32 +11,20 @@ mui.init({
  * 下拉刷新具体业务实现
  */
 // 获取系统状态栏高度
-var systemBarHeight = plus.navigator.getStatusbarHeight() * -1 + 'px';
-
-var subpage_style = {
-	top: systemBarHeight,
-	bottom: '51px'
-};
+//var systemBarHeight = plus.navigator.getStatusbarHeight() * -1 + 'px';
+//
+//var subpage_style = {
+//	top: systemBarHeight,
+//	bottom: '51px'
+//};
 
 function pulldownRefresh() {
-	var temp = plus.webview.create('recommended.html', 'pageFolder/mainPages/recommended.html', subpage_style);
-	plus.webview.getLaunchWebview().append(temp);
-	var timer = setInterval(function() {
-		if (temp) {
-			clearInterval(timer);
-		}
-	}, 500);
-	setTimeout(function() {
+	setTimeout(function(){
 		mui('#pullrefresh').pullRefresh().endPulldownToRefresh();
-		temp.show();
-		plus.webview.currentWebview().close();
-	}, 1000);
+		plus.webview.currentWebview().reload();	
+	},1000);
 }
-var screenHeight;
-var recommendedSliderHeight;
-mui.plusReady(function() {
-	screenHeight = plus.screen.resolutionHeight;
-});
+
 mui.ready(function() {
 	//获得newsBar轮播插件对象
 	var newsBar = mui('#newsBar');
